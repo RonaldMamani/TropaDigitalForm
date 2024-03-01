@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Formulario Tropa Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O projeto de acesso de Login e Cadastro para a Tropa Digital, o site tem a verificação de email, senha e nome, também temos acesso para a pagina Dashboard para acessarmos um template de login de Usuario.
 
-Currently, two official plugins are available:
+## Local Hospedado
+O projeto esta hospedado localmente na Vercel, o link esta abaixo:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Link: https://tropa-digital-form.vercel.app/
 
-## Expanding the ESLint configuration
+## Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone o repositorio localmente
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+  git https://github.com/RonaldMamani/TropaDigitalForm.git
+  cd TropaDigitalForm
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Instale as despendencias do projeto e inicie o servidor
+
+```bash
+  npm install 
+  npm run dev
+```
+    
+## Aprendizados
+
+O projeto foi realizado com React com utilização do framework de estilização TailwindCSS, é tambem tive que configurar para utilizar um plugin do TailwindCSS com o @tailwindcss/forms, a validação de formularios foi utilizando os Regex para verificar quais caracteres e formatos eram permitidos no formulario, tambem tive a verificação para acessar a pagina de Dashboard, tambem foi um grande desafio a elaboração do Modal no projeto para aparecer.
+## Stack utilizada
+
+**Front-end:** React, Vite, Typescript, Router, Regex, TailwindCSS
+
+
+
+## Funcionalidades
+
+- Navegação em Single Page Application
+- Validação de Formulario nos input
+- Verificação no Formato de Email e Senha
+- Direcionamento para paginas com Router
+
+
+
+## Autores
+
+- [@Ronaldo Arley](https://github.com/RonaldMamani)
